@@ -9,7 +9,9 @@ body {
 .navbar {
   display: flex;
   justify-content: space-around;
-  background-color: #ff851b;
+  background-color: #f4d03f;
+  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+
   top: 0;
   width: 100vw;
   height: 10vh;
@@ -30,7 +32,13 @@ body {
   color: black;
 }
 .navbarcomponent:hover {
-  background-color: #f012be;
+  background-color: #ff9a8b;
+  background-image: linear-gradient(
+    90deg,
+    #ff9a8b 0%,
+    #ff6a88 55%,
+    #ff99ac 100%
+  );
 }
 .content {
   overflow-y: scroll;
@@ -39,56 +47,80 @@ body {
   display: none;
 }
 #home {
-  background: linear-gradient(35deg, #ccffff, #ffcccc);
-  height: 100vh;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  font-family: Garamond;
+  height: 150vh;
 }
 .textcontainer {
   position: absolute;
-  top: 10vh;
+  top: 25vh;
   left: 5vw;
   width: 60vw;
 }
 .textcontainer > h2 {
   font-size: 3em;
-  margin-bottom: -6vh;
+  margin-bottom: 6vh;
+  color: #ffffff;
 }
 .textcontainer > h1 {
   font-size: 7em;
+  color: #ffffff;
 }
 #home > img {
-  height: 60vh;
-  width: 30vw;
-  bottom: 5vh;
-  right: 5vw;
+  height: 80vh;
+  width: 40vw;
   position: absolute;
+  bottom: -50vh;
+  right: 5vw;
 }
 #tips {
-  background: #4fffb0;
-  height: 100vh;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  height: 130vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  font-family: Candara;
+}
+#tips > h2 {
+  font-size: 3.5em;
+  padding-top: 3vh;
 }
 .tipscontainer {
-  height: 40vh;
+  height: 50vh;
   width: 80vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border: 1px solid black;
   margin-bottom: 2vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .tipscontainer > img {
-  height: 30vh;
-  width: 20vw;
+  height: 90%;
+  width: 30%;
+}
+.tipscontainer > h3 {
+  font-size: 3em;
 }
 #symptoms {
-  background: #ff003f;
-  height: 100vh;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  font-family: Georgia;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#symptoms > h2 {
+  font-size: 3em;
+  padding-top: 5vh;
 }
 table,
 tr,
@@ -98,21 +130,34 @@ td {
   border-collapse: collapse;
   text-align: center;
 }
+th {
+  font-size: 2em;
+}
+td {
+  font-size: 1.5em;
+}
 table {
   height: 85vh;
   width: 80vw;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 #faqs {
-  background: #40e0d0;
-  height: 100vh;
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+  font-family: "Times New Roman", Times, serif;
+  height: 170vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
+#faqs > h2 {
+  font-size: 3em;
+  padding-top: 5vh;
+}
 .faqsbox {
-  height: 85vh;
-  width: 80vw;
+  height: 140vh;
+  width: 85vw;
   border: 2px solid black;
   display: flex;
   flex-direction: column;
@@ -120,37 +165,51 @@ table {
   align-items: center;
 }
 .faqsboxinner {
-  height: 25vh;
-  width: 65vw;
+  height: 43vh;
+  width: 75vw;
   padding-left: 1vw;
   padding-right: 1vw;
   border: 2px solid black;
 }
 .faqsboxinner > h3 {
   text-align: center;
+  font-size: 2em;
+}
+.faqsboxinner > h4 {
+  font-size: 1.25em;
 }
 #youtube {
-  background: #ffff00;
-  height: 100vh;
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+
+  height: 105vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  font-family: Copperplate;
 }
 #youtube > h2 {
   text-align: center;
+  font-size: 3em;
+  padding-top: 5vh;
 }
 #youtube > iframe {
   width: 80vw;
-  height: 80vh;
+  height: 75vh;
 }
 .footer {
-  background-color: #662d91;
-  height: 10vh;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: Papyrus;
 }
 .footernotetop {
   color: #ffffff;
